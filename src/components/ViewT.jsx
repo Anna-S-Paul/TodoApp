@@ -7,6 +7,7 @@ const ViewT = () => {
     const fetchData=()=>{
       axios.get("https://jsonplaceholder.typicode.com/todos").then(
         (response)=>{
+          console.log(response.data)
           setTodos(response.data)
         }
       ).catch().finally()
